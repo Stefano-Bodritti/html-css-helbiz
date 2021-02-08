@@ -45,8 +45,6 @@ button.lang {
 }
 
 .nav_left li a {
-  font-size: 12px;
-  font-weight: 600;
   color: black;
 }
 
@@ -62,6 +60,7 @@ button.lang {
   left: 0;
   right: 0;
   background-color: white;
+  z-index: 10;
 }
 
 .burger {
@@ -73,3 +72,28 @@ button.lang {
   font-size: 20px;
 }
 /* fine navbar */
+/* hero */
+.header_bottom {
+  padding: 70px 0;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  color: black;
+}
+
+#hero_img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+}
+/* fine hero */
