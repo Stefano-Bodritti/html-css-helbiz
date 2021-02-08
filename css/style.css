@@ -1,3 +1,75 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.list-inline {
+  margin-bottom: 0;
+}
+
+/* Buttons */
+button.lang {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  padding: 0 10px;
+  line-height: normal;
+}
+
+.btn_login {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 7px 23px;
+  border-radius: 0;
+}
+
+.btn_login:hover {
+  color: white;
+}
+
+/* navbar */
+.logo img {
+  height: 14px;
+}
+
+.nav_left, .nav_right {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav_left li {
+  margin-right: 20px;
+}
+
+.nav_left li a {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+
+.nav_left li a:hover {
+  text-decoration: none;
+}
+
+.header_top {
+  line-height: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.burger {
+  background-color: transparent;
+  color: black;
+}
+
+.burger i {
+  font-size: 20px;
+}
+/* fine navbar */
