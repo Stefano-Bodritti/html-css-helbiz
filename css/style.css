@@ -7,7 +7,10 @@ body {
   margin-bottom: 0;
 }
 
-
+.container_small {
+  max-width: 750px;
+  margin: auto;
+}
 
 /* Buttons */
 button.lang {
@@ -103,34 +106,48 @@ h1 {
   background-size: cover;
 }
 
-.container_small {
-  max-width: 750px;
-  margin: auto;
-  position: relative;
-  bottom: 400px;
-}
 .box {
-  height: 200px;
   display: inline-block;
   width: calc((100% / 3) - 4px);
   position: relative;
 }
-.cell {
-  height: 600px;
-  background-color: yellow;
+
+.phone {
   left: calc(100% / 3);
+  bottom: 150px;
 }
+
+.phone img {
+  width: 100%;
+}
+
 .box_1 {
-  background-color: red;
   right: calc(100% / 3);
 }
 
-.box_2 {
-  background-color: green;
+.box_1 h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.box_2 h3 {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.box_2 p {
+  font-size: 16px;
+}
+
+.box_1, .box_2 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .boxes {
-  margin-bottom: -400px;
+  margin-bottom: -250px;
+  position: relative;
+  bottom: 150px;
 }
 /* fine sezione banner */
 
@@ -146,6 +163,11 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .boxes {
+    margin-bottom: -200px;
+    bottom: 250px;
+  }
+
   .box {
     width: 100%;
   }
@@ -154,7 +176,15 @@ h1 {
     right: auto;
   }
 
-  .cell {
+  .box_1, .box_2 {
+    padding: 10px;
+  }
+
+  .phone {
+    left: auto;
+    bottom: auto;
     max-width: 250px;
+    margin: auto;
+    display: block;
   }
 }
