@@ -2,9 +2,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* Mix */
 .list-inline {
   margin-bottom: 0;
 }
+
+
 
 /* Buttons */
 button.lang {
@@ -86,6 +89,51 @@ h1 {
 #hero_img {
   width: 100%;
 }
+/* fine hero */
+.placeholder {
+  height: 500px;
+  background-color: blue;
+}
+
+/* sezione banner */
+.banner_img {
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+}
+
+.container_small {
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+  bottom: 400px;
+}
+.box {
+  height: 200px;
+  display: inline-block;
+  width: calc((100% / 3) - 4px);
+  position: relative;
+}
+.cell {
+  height: 600px;
+  background-color: yellow;
+  left: calc(100% / 3);
+}
+.box_1 {
+  background-color: red;
+  right: calc(100% / 3);
+}
+
+.box_2 {
+  background-color: green;
+}
+
+.boxes {
+  margin-bottom: -400px;
+}
+/* fine sezione banner */
+
 
 @media screen and (max-width: 1200px) {
   h1 {
@@ -96,4 +144,17 @@ h1 {
   h1 {
     font-size: 50px;
 }
-/* fine hero */
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+
+  .box_1 {
+    right: auto;
+  }
+
+  .cell {
+    max-width: 250px;
+  }
+}
